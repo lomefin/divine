@@ -3,7 +3,7 @@ Divine
 
 A pure ES6 helper to apply some validation digits calculation and verifications
 
-[![Build Status](https://travis-ci.org/lomefin/jedis.svg?branch=master)](https://travis-ci.org/lomefin/divine)
+[![Build Status](https://travis-ci.org/lomefin/divine.svg?branch=master)](https://travis-ci.org/lomefin/divine)
 
 What it is
 ---------------
