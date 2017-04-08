@@ -51,11 +51,10 @@ class Divine {
   constructor(){
     console.debug("Divine starting. Hallelluyah!");
     this.module11 = new Module11();
-    this.findAllInputs();
     
   }
 
-  findAllInputs() {
+  start() {
     for( var input of document.getElementsByClassName("needs-divine-validation")){
       input.addEventListener("keyup", (event)=>{this.module11.validate(event)});
     }
@@ -65,7 +64,7 @@ class Divine {
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-  var divine = new Divine();
+  var divine = new Divine().start();
 });
 
 // export default Divine;

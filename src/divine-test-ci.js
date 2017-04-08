@@ -1,22 +1,16 @@
 // import Divine from 'divine';
 
 class DivineTest{
-  
+  constructor() {
+    this.divine = new Divine();
+  }
 }
 
 class JedisTest{
   constructor(){
-    this.jedis = new Jedis("jedisTest");
-    this.testResults = [];
-    this.testResultsByName = {};
   }
 
-  up() {
-  }
 
-  down() {
-    this.jedis.flushAll(true)
-  }
 
   JSTest = (name, func, upOverride = null, downOverride = null) => {
     upOverride !== null ? upOverride() : this.up();
